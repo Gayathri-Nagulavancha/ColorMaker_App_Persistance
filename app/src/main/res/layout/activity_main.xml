@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    <!--This textview is to display colors-->
+    <!--This switch is used to control red color-->
+    <!--for the color of switch we have imported from trackred.xml file in drawable folder-->
+    <TextView
+        android:id="@+id/tv_ColorBox"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+    <Switch
+        android:id="@+id/switch_1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:thumbTint="@color/white"
+        android:trackTint="@drawable/trackred"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
+    <!--This switch is used to control green color-->
+    <!--for the color of switch we have imported from trackgreen.xml file in drawable folder-->
+    <Switch
+        android:id="@+id/switch_2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:thumbTint="@color/white"
+        android:trackTint="@drawable/trackgreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+    <!--This switch is used to control blue color-->
+    <!--for the color of switch we have imported from trackblue.xml file in drawable folder-->
+    <Switch
+        android:id="@+id/switch_3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:thumbTint="@color/white"
+        android:trackTint="@drawable/trackblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+    <!--This seekbar is used to change the intensity of red color-->
+    <SeekBar
+        android:id="@+id/sb_0"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:foregroundGravity="center"
+        android:max="255"
+        android:progress="0"
+        android:progressBackgroundTint="@color/red"
+        android:progressTint="@color/red"
+        android:thumbTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
+    <!--This seekbar is used to change the intensity of green color-->
+    <SeekBar
+        android:id="@+id/sb_1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:foregroundGravity="center"
+        android:max="255"
+        android:progress="0"
+        android:progressBackgroundTint="@color/green"
+        android:progressTint="@color/green"
+        android:thumbTint="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+    <!--This seekbar is used to change the intensity of blue color-->
+    <SeekBar
+        android:id="@+id/sb_2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:max="255"
+        android:progress="0"
+        android:progressBackgroundTint="@color/blue"
+        android:progressTint="@color/blue"
+        android:thumbTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+    <!--This textview is used to display value for red color-->
+    <EditText
+        android:id="@+id/tv_0"
+        android:layout_width="51dp"
+        android:layout_height="25dp"
+        android:background="@drawable/textview_value_border"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48"
+        tools:ignore="MissingConstraints" />
+    <!--This textview is used to display value for green color-->
+    <EditText
+        android:id="@+id/tv_1"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@drawable/textview_value_border"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58"
+        tools:ignore="MissingConstraints" />
+    <!--This textview is used to display value for blue color-->
+    <EditText
+        android:id="@+id/tv_2"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@drawable/textview_value_border"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        tools:ignore="MissingConstraints" />
+    <!--This button is for reset-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
+    <!--This textview is used for border around the colorbox-->
+    <!--for border we are using textview_border.xml file in drawable folder-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
